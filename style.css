@@ -1,0 +1,162 @@
+body { 
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 98% 1%;
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+}
+
+.contgrid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    width: 375px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+}
+
+.equilibrium {
+    grid-column: 1/4;
+    grid-row: 1/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.equilibrium > img {
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.title {
+    grid-column: 1/3;
+    padding-left: 20px;
+    color: #fff;
+    transition: color .5s;
+    font-size: 12px;
+}
+
+.title:hover {
+    color: hsl(178, 100%, 50%);
+    cursor:pointer; cursor: hand;
+}
+
+.title > h1 {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.subtitle {
+    grid-column: 1/3;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: pargraph;
+    font-size: 12px;
+    color: hsl(215, 51%, 70%);
+}
+
+.subtitle > h2 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.ethereumprice {
+    grid-column: 1/2;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    padding-left: 5px;
+    color: hsl(178, 100%, 50%);
+    /**/
+}
+
+.clocktime {
+    grid-column: 2/3;
+    padding-right: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.clock > img {
+    padding-right: 5px;
+    padding-top: 4px;
+}
+
+.time > p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    color: hsl(215, 51%, 70%);
+}
+
+.containline {
+    grid-column: 1/3;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.line {
+    height: 1px;
+    background-color: hsl(215, 32%, 27%);
+    margin: 0 auto;
+}
+
+.avatarrecognition {
+    grid-column: 1/3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.avatar > img {
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 100%;
+}
+
+.recognition > p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-left: 15px;
+    color: hsl(215, 51%, 70%);
+}
+
+.recognition > p > span {
+    color: white;
+    transition: color .5s;
+    padding-left: 5px;
+}
+
+.recognition > p > span:hover {
+    color: hsl(178, 100%, 50%);
+    cursor:pointer; cursor: hand;
+}
+
+.footer { 
+    font-size: 15px; 
+    text-align: center;
+    color: #55f;
+}
+
+.footer a { 
+    color: hsl(178, 100%, 50%);
+    /**/
+}
